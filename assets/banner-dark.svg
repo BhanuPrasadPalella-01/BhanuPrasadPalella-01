@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Bhanu Prasad Palella — Full-stack, AI and robotics">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1d1f26" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="rule" x1="0" x2="1">
+      <stop offset="0" stop-color="#d39b5f"/>
+      <stop offset="1" stop-color="#f4f0e8" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.25" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#d39b5f" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#d39b5f" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="type">
+      <rect x="0" y="0" height="40" width="0">
+        <animate attributeName="width" values="0;390;390;0" keyTimes="0;0.45;0.9;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <style>
+    .mono { font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .sans { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .scan { animation: scan 6s linear infinite; }
+    @keyframes scan { from { transform: translateY(-40px); } to { transform: translateY(400px); } }
+  </style>
+
+  <rect width="1200" height="360" rx="14" fill="#0e0f12"/>
+  <rect width="1200" height="360" rx="14" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="14" fill="url(#glow)"/>
+  <rect class="scan" x="0" y="0" width="1200" height="2" fill="#d39b5f" opacity="0.08"/>
+
+  <!-- corner brackets -->
+  <g fill="none" stroke-width="3" stroke-linecap="square">
+    <path d="M28 70V28H70" stroke="#d39b5f"/>
+    <path d="M1130 28H1172V70" stroke="#f4f0e8" stroke-opacity="0.6"/>
+    <path d="M28 290V332H70" stroke="#f4f0e8" stroke-opacity="0.6"/>
+    <path d="M1130 332H1172V290" stroke="#d39b5f"/>
+  </g>
+
+  <!-- status pill -->
+  <g transform="translate(1036 52)">
+    <circle cx="8" cy="0" r="6" fill="#62d26f">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="22" y="5" class="mono" font-size="15" letter-spacing="3" fill="#cfe9d3">ONLINE</text>
+  </g>
+
+  <!-- bp mark -->
+  <g transform="translate(1012 150)">
+    <text x="0" y="62" font-size="96" font-style="italic" font-weight="600" fill="#f4f0e8" font-family="Georgia, 'Times New Roman', serif">bp</text>
+    <circle cx="112" cy="58" r="9" fill="#b5844f"/>
+  </g>
+
+  <text x="72" y="140" class="sans" font-size="64" font-weight="800" letter-spacing="1" fill="#f4f0e8">BHANU PRASAD</text>
+  <text x="72" y="210" class="sans" font-size="64" font-weight="800" letter-spacing="1" fill="#d39b5f">PALELLA</text>
+  <rect x="74" y="230" width="520" height="3" rx="1.5" fill="url(#rule)"/>
+
+  <text x="74" y="268" class="mono" font-size="19" letter-spacing="6" fill="#c9c3b8">FULL-STACK <tspan fill="#d39b5f">×</tspan> AI / ML <tspan fill="#d39b5f">×</tspan> ROBOTICS</text>
+
+  <g transform="translate(74 300)">
+    <text x="0" y="18" class="mono" font-size="17" fill="#6f7380">bhanu@amrita:~$</text>
+    <g transform="translate(168 0)">
+      <g clip-path="url(#type)">
+        <text x="0" y="18" class="mono" font-size="17" fill="#e6cfae">./deploy --room --robots --everything</text>
+      </g>
+    </g>
+    <rect x="168" y="3" width="10" height="19" fill="#d39b5f">
+      <animate attributeName="x" values="168;558;558;168" keyTimes="0;0.45;0.9;1" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
