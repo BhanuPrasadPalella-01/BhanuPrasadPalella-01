@@ -102,7 +102,7 @@ for (let i = days.length - 1; i >= 0; i--) {
   else if (i === days.length - 1) continue;
   else break;
 }
-const latest = repos[0];
+const latest = repos.find((r) => r.name !== USER); // skip this README repo's own bot commits
 
 const status = box("SYSTEM STATUS", [
   "● ONLINE  —  rescuebot.service active (running)",
